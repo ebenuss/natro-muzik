@@ -1,0 +1,112 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
+
+# Commands in Every Language
+
+# Bot Commands
+PING_COMMAND : ["ping"]
+START_COMMAND : ["start"]
+HELP_COMMAND : ["help", "yardim", "yardım"]
+SETTINGS_COMMAND : ["settings", "setting", "ayarlar", "ayar"]
+RELOAD_COMMAND : ["admincache", "reload"]
+GSTATS_COMMAND : ["mgrsffethyats"]
+STATS_COMMAND : ["jddkdkasdfdsafgh"]
+LANGUAGE_COMMAND : ["lang", "language", "langs", "dil"]
+
+# Play Commands
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "oynat", "o", "pl"]
+PLAYMODE_COMMAND : ["playmode"]
+CHANNELPLAY_COMMAND : ["channelplay"]
+STREAM_COMMAND : ["stadsfream", "cstfewream", "strfewaeamforce"]
+
+#Playlists Command
+PLAYLIST_COMMAND : ["playlist"]
+DELETEPLAYLIST_COMMAND : ["deleteplaylist", "listemisil"]
+
+
+# Tools
+QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying", "sira"]
+SONG_COMMAND : ["song", "video", "bul", "indir", "vbul"]
+LYRICS_COMMAND : ["lyrics", "sarkisozu", "sarkısözü", "sarkisözü"]
+
+
+# Admin Commands
+AUTH_COMMAND : ["auth", "yetkilendir"]
+UNAUTH_COMMAND : ["unauth"]
+AUTHUSERS_COMMAND : ["authusers"]
+PAUSE_COMMAND : ["pause", "cpause", "duraklat"]
+RESUME_COMMAND : ["resume", "cresume", "devam"]
+MUTE_COMMAND : ["muafgte", "cmuwfaete"]
+UNMUTE_COMMAND : ["unmwaefute", "cunmfawute"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend", "durdur", "dur", "son", "bitir"]
+SKIP_COMMAND : ["skip", "cskip", "atla", "a"]
+SHUFFLE_COMMAND : ["karistir", "cshuffle", "karıştır"]
+LOOP_COMMAND : ["loop", "cloop", "dongu", "döngü", "tekrar"]
+SEEK_COMMAND : ["ilerisar", "cseek", "gerisar", "seekback", "cseekback"]
+RESTART_COMMAND : ["restart"]
+
+# Sudo Users Commaands
+
+# Sudo Command
+ADDSUDO_COMMAND : ["addsudo"]
+DELSUDO_COMMAND : ["delsudo"]
+SUDOUSERS_COMMAND : ["sudolistt"]
+
+#Broadcast 
+BROADCAST_COMMAND : ["broadcast"]
+
+#Blacklist chat
+BLACKLISTCHAT_COMMAND : ["blacklistchat", "engelle"]
+WHITELISTCHAT_COMMAND : ["whitelistchat"]
+BLACKLISTEDCHAT_COMMAND : ["blacklistedchat", "engelliler"]
+
+# Video Calls Command
+VIDEOLIMIT_COMMAND : ["set_video_limit", "videolimit"]
+VIDEOMODE_COMMAND : ["videomode"]
+
+#Mantenance
+MAINTENANCE_COMMAND : ["maintenance"]
+LOGGER_COMMAND : ["logger"]
+
+#Heroku
+GETLOG_COMMAND : ["get_log"]
+GETVAR_COMMAND : ["geetfew_efwvar"]
+DELVAR_COMMAND : ["defwel_var"]
+SETVAR_COMMAND : ["sefwet_var"]
+USAGE_COMMAND : ["usafwage"]
+VARS_COMMAND : ["vafawrs", "config"]
+
+
+#Basic Bot Commands
+UPDATE_COMMAND : ["update"]
+REBOOT_COMMAND : ["reboot"]
+AUTOEND_COMMAND : ["autoend"]
+
+#Private Bot Mode
+AUTHORIZE_COMMAND : ["pro"]
+UNAUTHORIZE_COMMAND : ["unpro"]
+AUTHORIZED_COMMAND : ["prolar"]
+
+#Block Users Command
+BLOCK_COMMAND : ["block"]
+UNBLOCK_COMMAND : ["unblock"]
+BLOCKED_COMMAND : ["blockedusers"]
+
+#sPEEDTEST
+SPEEDTEST_COMMAND : ["speedtest", "spd", "speed"]
+
+#Voice chat commands
+ACTIVEVC_COMMAND : ["activevoice", "aktifses"]
+ACTIVEVIDEO_COMMAND : ["activevideo", "aktifvideo"]
+
+#Gban Commands
+GBAN_COMMAND : ["gban"]
+UNGBAN_COMMAND : ["ungban"]
+GBANNED_COMMAND : ["gbannedusers"]

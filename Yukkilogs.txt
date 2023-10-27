@@ -1,0 +1,89 @@
+[22-Oct-23 21:58:09 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Oct-23 21:58:09 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Oct-23 21:58:09 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Oct-23 21:58:11 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Oct-23 21:58:11 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Oct-23 21:58:20 - INFO] - YukkiMusic.core.bot - MusicBot Started as Aysu Music
+[22-Oct-23 21:58:20 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[22-Oct-23 21:58:20 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[22-Oct-23 21:58:23 - INFO] - YukkiMusic.core.userbot - Assistant Started as Aysu Asistan
+[22-Oct-23 21:58:23 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[22-Oct-23 21:58:25 - ERROR] - pyrogram.dispatcher - date value out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/NatroNew/YukkiMusic/plugins/misc/cleanmode.py", line 63, in clean_mode
+    "timer_after": time_now + timedelta(minutes=AUTO_DELETE),
+OverflowError: date value out of range
+[22-Oct-23 21:58:29 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[22-Oct-23 21:58:42 - ERROR] - pyrogram.dispatcher - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001665586296'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/NatroNew/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/NatroNew/YukkiMusic/plugins/bot/start.py", line 50, in start_comm
+    await client.send_message(-1001665586296, f"""
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/send_message.py", line 130, in send_message
+    peer=await self.resolve_peer(chat_id),
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[22-Oct-23 21:59:19 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1796' coro=<Session.handle_packet() done, defined at /usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py:180> exception=ValueError('The server sent an unknown constructor: 0x85d6cbe2\n4fd73b3f 33bc2f70 56fd8a16 0d210e2f 2dbbf62a 07e8a6c5')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/crypto/mtproto.py", line 76, in unpack
+    message = Message.read(data)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/message.py", line 46, in read
+    return Message(TLObject.read(BytesIO(body)), msg_id, seq_no, length)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/tl_object.py", line 33, in read
+    return cast(TLObject, objects[int.from_bytes(b.read(4), "little")]).read(b, *args)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/types/updates_t.py", line 142, in read
+    updates = TLObject.read(b)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/tl_object.py", line 33, in read
+    return cast(TLObject, objects[int.from_bytes(b.read(4), "little")]).read(b, *args)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/primitives/vector.py", line 49, in read
+    return List(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/primitives/vector.py", line 51, in <genexpr>
+    else Vector.read_bare(data, size)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/primitives/vector.py", line 40, in read_bare
+    return TLObject.read(b)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/tl_object.py", line 33, in read
+    return cast(TLObject, objects[int.from_bytes(b.read(4), "little")]).read(b, *args)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/types/update_new_channel_message.py", line 60, in read
+    message = TLObject.read(b)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/raw/core/tl_object.py", line 33, in read
+    return cast(TLObject, objects[int.from_bytes(b.read(4), "little")]).read(b, *args)
+KeyError: 2245446626
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 182, in handle_packet
+    data = await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/crypto/mtproto.py", line 87, in unpack
+    raise ValueError(f"The server sent an unknown constructor: {hex(e.args[0])}\n{left}")
+ValueError: The server sent an unknown constructor: 0x85d6cbe2
+4fd73b3f 33bc2f70 56fd8a16 0d210e2f 2dbbf62a 07e8a6c5
+[22-Oct-23 21:59:45 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[22-Oct-23 21:59:46 - INFO] - YukkiMusic - Stopping Yukki Music Bot! GoodBye
