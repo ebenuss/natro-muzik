@@ -1,3 +1,3 @@
 kurulum için Telegramdan ulaşabilirsiniz 
 
-t.me/SamilBurda
+t.me/pikahubb
